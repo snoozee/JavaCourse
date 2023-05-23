@@ -1,4 +1,4 @@
-package src.main.java;
+package animals;
 
 public class Dog extends Animal{
     private static int DogCount;
