@@ -1,5 +1,3 @@
-package src.main.java;
-
 public class Cat extends Animal {
     private static int catCount;
 
