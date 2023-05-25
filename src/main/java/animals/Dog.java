@@ -14,9 +14,9 @@ public class Dog extends Animal{
     @Override
     public void run(int length) {
         if (length <= 500) {
-            System.out.println("Собачка " + getName() + " пробіг " + length + " метрів");
+            System.out.println("Dog " + getName() + " ran " + length + " meters.");
         } else {
-            System.out.println("Собачка " + getName() + " не вміє бігати так далеко");
+            System.out.println("Dog " + getName() + " can't run so far.");
         }
     }
 

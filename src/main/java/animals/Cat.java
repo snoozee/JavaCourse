@@ -14,9 +14,9 @@ public class Cat extends Animal {
     @Override
     public void run(int length) {
         if (length <= 200) {
-            System.out.println("Кіт " + getName() + " пробіг " + length + " метрів");
+            System.out.println("Cat " + getName() + " ran " + length + " meters.");
         } else {
-            System.out.println("Кіт " + getName() + " не вміє бігати так далеко");
+            System.out.println("Cat " + getName() + " can't run so far.");
         }
     }
 

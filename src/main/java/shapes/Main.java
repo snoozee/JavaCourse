@@ -31,6 +31,6 @@ public class Main {
             sumArea += shape.calculateArea();
         }
 
-        return "Загальна площа " + totalShapesCount + " фігур " + sumArea + " квадратних одиниць виміру";
+        return "Total area of " + totalShapesCount + " shapes is " + sumArea + " square meters";
     }
 }
