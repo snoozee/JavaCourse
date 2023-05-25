@@ -13,15 +13,15 @@ public class Treadmill implements Obstacle {
         if (participant.isSuccess()) {
             if (participant.getRunLimit() >= length) {
                 participant.run(length);
-                System.out.println("Учасник " + participant.getName() + " пройшов перешкоду " + name +
-                        " довжиною " + length + " метрів.\n");
+                System.out.println("Participant " + participant.getName() + " passed obstacle " + name +
+                        " length " + length + " meters.\n");
             } else {
                 participant.endPart();
             }
 
             if (!participant.isSuccess()) {
-                System.out.println("Учасник " + participant.getName() + " не пройшов перешкоду " + name +
-                        " на відстань " + length + ". Пройшов 0.0\n");
+                System.out.println("Participant " + participant.getName() + " didn't pass an obstacle " + name +
+                        " length " + length + " meters. Passed 0.0 meters.\n");
             }
         }
     }

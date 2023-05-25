@@ -13,15 +13,15 @@ public class Wall implements Obstacle {
         if (participant.isSuccess()) {
             if (participant.getJumpLimit() >= height) {
                 participant.jump(height);
-                System.out.println("Учасник " + participant.getName() + " пройшов перешкоду " + name +
-                        " довжиною " + height + " метрів.\n");
+                System.out.println("Participant " + participant.getName() + " passed an obstacle " + name +
+                        " height " + height + " meters.\n");
             } else {
                 participant.endPart();
             }
 
             if (!participant.isSuccess()) {
-                System.out.println("Учасник " + participant.getName() + " не пройшов перешкоду " + name +
-                        " на відстань " + height + ". Пройшов 0.0\n");
+                System.out.println("Participant " + participant.getName() + " didn't pass an obstacle " + name +
+                        " height " + height + " meters. Passed 0.0 meters.\n");
             }
         }
     }
