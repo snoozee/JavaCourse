@@ -1,4 +1,4 @@
-package animals;
+package src.main.java;
 
 public class Animal {
     private final String name;
