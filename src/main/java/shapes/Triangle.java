@@ -12,7 +12,7 @@ public class Triangle implements Shape {
     }
 
     @Override
-    public double getArea() {
+    public double calculateArea() {
         //Heron formula
         double halfPerimeter = (side1 + side2 + side3) / 2.0;
 

@@ -16,14 +16,14 @@ public class Cat implements Participant {
     @Override
     public void run(double distance) {
         if (success) {
-            System.out.println("Учасник " + name + " біжить відстань " + distance + " метрів");
+            System.out.println("Participant " + name + " is running " + distance + " meters");
         }
     }
 
     @Override
     public void jump(double height) {
         if (success) {
-            System.out.println("Учасник " + name + " стрибає на висоту " + height + " метрів");
+            System.out.println("Participant " + name + " is jumping on " + height + " meters");
         }
     }
 

@@ -1,5 +1,5 @@
 package participant;
 
 public interface Obstacle {
-    void pass(Participant participant);
+    void overcome(Participant participant);
 }

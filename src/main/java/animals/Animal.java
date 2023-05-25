@@ -19,11 +19,11 @@ public class Animal {
     }
 
     public void run(int length) {
-        System.out.println("Тваринка пробігла " + length + " метрів");
+        System.out.println("Animal ran " + length + " meters");
     }
 
     public void swim(int length) {
-        System.out.println("Тваринка проплила " + length + " метрів");
+        System.out.println("Animal  " + length + " meters");
     }
 
 }

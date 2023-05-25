@@ -28,7 +28,7 @@ public class Main {
         int totalShapesCount = 0;
         for (Shape shape: shapes) {
             totalShapesCount++;
-            sumArea += shape.getArea();
+            sumArea += shape.calculateArea();
         }
 
         return "Загальна площа " + totalShapesCount + " фігур " + sumArea + " квадратних одиниць виміру";

@@ -9,7 +9,7 @@ public class Treadmill implements Obstacle {
         this.name = name;
     }
     @Override
-    public void pass(Participant participant) {
+    public void overcome(Participant participant) {
         if (participant.isSuccess()) {
             if (participant.getRunLimit() >= length) {
                 participant.run(length);
