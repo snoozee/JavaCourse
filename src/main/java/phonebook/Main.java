@@ -32,7 +32,7 @@ public class Main {
         }
 
         String searchName = "John Doe";
-        List<Record> matchingRecords = phoneDirectory.find(searchName);
+        List<Record> matchingRecords = (phoneDirectory.find(searchName));
 
         if (!matchingRecords.isEmpty()) {
             System.out.println("Records found for name: " + searchName);
