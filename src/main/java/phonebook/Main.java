@@ -1,8 +1,6 @@
 package phonebook;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.StreamSupport;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,18 +25,18 @@ public class Main {
         };
 
         for (String[] contact : contacts) {
-            Record record = new Record(contact[0], contact[1]);
-            phoneDirectory.add(record);
+            RecordPhone recordPhone = new RecordPhone(contact[0], contact[1]);
+            phoneDirectory.add(recordPhone);
         }
 
         String searchName = "John Doe";
-        List<Record> matchingRecords = (phoneDirectory.find(searchName));
+        List<RecordPhone> matchingRecords = (phoneDirectory.find(searchName));
 
         if (!matchingRecords.isEmpty()) {
             System.out.println("Records found for name: " + searchName);
-            for (Record record : matchingRecords) {
-                System.out.println("Name: " + record.getName());
-                System.out.println("Phone: " + record.getPhone());
+            for (RecordPhone recordPhone : matchingRecords) {
+                System.out.println("Name: " + recordPhone.getName());
+                System.out.println("Phone: " + recordPhone.getPhone());
                 System.out.println("-------------------------");
             }
         } else {

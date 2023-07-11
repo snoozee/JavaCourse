@@ -4,32 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TelephoneDirectory {
-    private List<Record> phoneBook;
+    private final List<RecordPhone> phoneBook;
 
     public TelephoneDirectory() {
         phoneBook = new ArrayList<>();
     }
 
-    public void add(Record record) {
+    public void add(RecordPhone record) {
         phoneBook.add(record);
     }
 
-    public List<Record> find(String name) {
-        List<Record> mathcRecords = new ArrayList<>();
-        for (Record record : phoneBook) {
+    public List<RecordPhone> find(String name) {
+        List<RecordPhone> mathcRecords = new ArrayList<>();
+        for (RecordPhone record : phoneBook) {
             if (record.getName().equals(name)) {
                 mathcRecords.add(record);
             }
         }
 
         return mathcRecords;
-    }
-
-    public String getPhoneBookAsString() {
-        StringBuilder sb = new StringBuilder();
-        for (Record record : phoneBook) {
-            sb.append("Name: ").append(record.getName()).append(", Phone: ").append(record.getPhone()).append("\n");
-        }
-        return sb.toString();
     }
 }

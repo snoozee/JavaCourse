@@ -1,10 +1,10 @@
 package phonebook;
 
-public class Record {
-    private String name;
-    private String phone;
+public class RecordPhone {
+    private final String name;
+    private final String phone;
 
-    public Record(String name, String phone) {
+    public RecordPhone(String name, String phone) {
         this.name = name;
         this.phone = phone;
     }
