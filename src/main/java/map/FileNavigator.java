@@ -14,7 +14,7 @@ public class FileNavigator {
         List<FileData> files = fileMap.getOrDefault(path, new ArrayList<>());
 
         for (FileData existingFile : files) {
-            if (!existingFile.getPath().equals(path)) {
+            if (existingFile.getPath() == null || existingFile.getPath().equals(path)) {
                 System.out.println("There is an error because the key path and the file path do not match");
                 return;
             }
@@ -26,18 +26,6 @@ public class FileNavigator {
 
     public List<FileData> find(String path) {
         return fileMap.getOrDefault(path, new ArrayList<>());
-    }
-
-    public List<FileData> filterBySize(int maxSize) {
-        List<FileData> filteredFiles = new ArrayList<>();
-        for (List<FileData> files : fileMap.values()) {
-            for (FileData file : files) {
-                if (file.getSize() <= maxSize) {
-                    filteredFiles.add(file);
-                }
-            }
-        }
-        return filteredFiles;
     }
 
     public void remove(String path) {

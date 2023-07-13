@@ -3,12 +3,10 @@ package map;
 public class FileData {
     private final String name;
     private final String path;
-    private final int size;
 
-    public FileData(String name, int size, String path) {
+    public FileData(String name, String path) {
         this.name = name;
         this.path = path;
-        this.size = size;
     }
 
     public String getName() {
@@ -17,10 +15,6 @@ public class FileData {
 
     public String getPath() {
         return path;
-    }
-
-    public int getSize() {
-        return size;
     }
 }
 
