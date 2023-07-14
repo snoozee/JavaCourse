@@ -41,8 +41,6 @@ public class Main {
     }
 
     public static void main(String args[]) {
-        //String[] myArray = {"SBU", "GUR", "ZSU", "TerOborona"};
-        //System.out.println("Array: " + Arrays.toString(myArray));
 
         String [] fruitsArray = {"apple", "orange", "banana"};
         List<String> fruitsList = toList(fruitsArray);
