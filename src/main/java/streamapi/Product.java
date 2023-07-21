@@ -3,14 +3,14 @@ package streamapi;
 import java.time.LocalDate;
 
 public class Product {
-    private final int ID;
+    private final int id;
     private final ProductType productType;
     private final double price;
     private final boolean discount;
     private final LocalDate dateAdded;
 
-    public Product (int ID, ProductType productType, double price, boolean discount, LocalDate dateAdded) {
-        this.ID = ID;
+    public Product (int id, ProductType productType, double price, boolean discount, LocalDate dateAdded) {
+        this.id = id;
         this.productType = productType;
         this.price = price;
         this.discount = discount;
@@ -21,8 +21,8 @@ public class Product {
         return productType;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
     public double getPrice() {
@@ -40,7 +40,7 @@ public class Product {
     @Override
     public String toString() {
         return "\nProduct{" +
-                "id=" + ID +
+                "id=" + id +
                 ", type='" + getProductType() + '\'' +
                 ", price=" + price +
                 ", hasDiscount=" + discount +

@@ -32,7 +32,7 @@ public class ProductShow {
                 .filter(product -> BOOK.equals(product.getProductType()))
                 .filter(Product::hasDiscount)
                 .map(product -> new Product(
-                        product.getID(), product.getProductType(), product.getPrice() * 0.9, false, product.getDateAdded())
+                        product.getId(), product.getProductType(), product.getPrice() * 0.9, false, product.getDateAdded())
                 )
                 .collect(Collectors.toList());
     }
