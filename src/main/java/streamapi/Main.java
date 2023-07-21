@@ -35,14 +35,14 @@ public class Main {
         List<Product> expensiveBooks = ProductShow.getExpensiveBooks();
         System.out.println("Expensive books:");
         for (Product product : expensiveBooks) {
-            System.out.println(product.getID() + ": " + product.getProductType() + " - $" + product.getPrice());
+            System.out.println(product.getId() + ": " + product.getProductType() + " - $" + product.getPrice());
         }
 
         // Get discounted books
         List<Product> discountedBooks = productShow.getDiscountBooks();
         System.out.println("\nDiscounted Books:");
         for (Product product : discountedBooks) {
-            System.out.println(product.getID() + ": " + product.getProductType() + " - $" + product.getPrice());
+            System.out.println(product.getId() + ": " + product.getProductType() + " - $" + product.getPrice());
         }
 
         // Get the cheapest book
@@ -55,7 +55,7 @@ public class Main {
 
         // Get the last three added products.
         List<Product> lastThreeAddedProducts = productShow.showLastThreeAddedProducts();
-        System.out.println("Last three added products: " + lastThreeAddedProducts);
+        System.out.println("\nLast three added products: " + lastThreeAddedProducts);
 
         // Get the total cost of books that meet the criteria for the current year.
         double totalCostOfBooks = productShow.getTotalBooksCostYearPrice();
@@ -63,7 +63,7 @@ public class Main {
 
         // Group products by type.
         Map<ProductType, List<Product>> productsByType = productShow.groupProductsByType();
-        System.out.println("Products grouped by type:");
+        System.out.println("\nProducts grouped by type:");
         for (ProductType type : productsByType.keySet()) {
             List<Product> productList = productsByType.get(type);
             System.out.println(type + ": " + productList);

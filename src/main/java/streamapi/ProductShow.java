@@ -38,11 +38,8 @@ public class ProductShow {
     }
 
     public Product getCheapestBook() {
-        List<Product> books = products.stream()
+        return products.stream()
                 .filter(product -> BOOK.equals(product.getProductType()))
-                .toList();
-
-        return books.stream()
                 .min(Comparator.comparingDouble(Product::getPrice))
                 .orElseThrow(() -> new RuntimeException("Product [category: Book] not found"));
     }
